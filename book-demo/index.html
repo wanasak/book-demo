@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Book Demo</title>
@@ -8,7 +9,24 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="styles.15113b3f93406d68011b.css"></head>
+
 <body>
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+        // REMOVE THIS - just showing the redirect route in the UI
+        document.body.setAttribute('message', 'This page was redirected by 404.html, from the route: ' + redirect);
+      } else {
+        // REMOVE THIS - just showing the redirect route in the UI
+        document.body.setAttribute('message', 'This page was loaded directly from the index.html file');
+      }
+    })();
+
+  </script>
   <app-root></app-root>
 <script type="text/javascript" src="runtime.994b979db2e6964f9bea.js"></script><script type="text/javascript" src="polyfills.9a5f6d04e0781d28c53e.js"></script><script type="text/javascript" src="main.19f366646539f0d4c3c6.js"></script></body>
+
 </html>
