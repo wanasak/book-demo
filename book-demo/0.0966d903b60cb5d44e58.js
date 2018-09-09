@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"n1/D":function(n,o,a){"use strict";a.r(o);var c=a("CcnG"),r=function(){};a.d(o,"BooksModuleNgFactory",function(){return t});var t=c.La(r,[],function(n){return c.Ua([c.Va(512,c.j,c.Aa,[[8,[]],[3,c.j],c.v]),c.Va(1073742336,r,r,[])])})}}]);
