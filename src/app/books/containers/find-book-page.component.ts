@@ -12,7 +12,7 @@ import { FindBookPageActions } from "../actions";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-book-search
-        [query]="query$ | async"
+        [query]="searchQuery$ | async"
         [searching]="loading$ | async"
         [error]="error$ | async"
         (search)="search($event)"></app-book-search>
