@@ -11,7 +11,7 @@ ng serve
 
 ## Demo site
 - [DemoSite](https://wanasak.github.io/book-demo/#/login)
-- Account test/test
+- Account: test/test
 
 ## References
 - [@ngrx4](https://github.com/ngrx/platform)
